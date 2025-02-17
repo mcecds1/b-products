@@ -22,13 +22,22 @@ body {
 }
 .header-logo {
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 .header-menu {
     width: 70%;
+    align-content: center;
 }
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+.icon {
+    height: 70px;
+}
+.logotext {
+    height: 110px;
 }
 
 
