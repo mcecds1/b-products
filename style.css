@@ -1,23 +1,6 @@
 /* Index */
-.articulo {
-    height: 150px;
-    background-color: #a3a3a3;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 10px 0;
-    width: 150px;
-    transition: 150ms;
-}
-.boxes {
-    width: 90%;
-    padding: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.articulo:hover {
-    box-shadow: 0 0 20px 10px #e2d73c;
-}
+
+
 
 /* Sobre Nosotros */
 
