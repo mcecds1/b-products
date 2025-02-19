@@ -49,6 +49,7 @@ a {
     height: 110px;
 }
 
+
 /* Footer */
 .footer {
     background-color: #292927;
@@ -112,6 +113,30 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.main1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.main1-left, .main1-right {
+    width: 45%;
+    padding: 5%
+
+}
+.img-main1 {
+    width: 100%;
+    border-radius: 20px;
+}
+.main1-left p {
+    font-weight: 500;
+    font-size: 20px;
+}
+.main1-left h3 {
+    font-size: 28px;
+}
+
 /* Sobre Nosotros */
 
 body {
