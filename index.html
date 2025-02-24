@@ -26,16 +26,63 @@
 </header>
     <!-- Main -->
 <main>
-    <section class="boxessec">
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-    <div class="boxes">a</div>
-</section>
+    <section class="sect1-main">
+        <div class="sect1-main-left">
+            <img src="assets/cecade-white.png" alt="" class="sect1-main-left-cecade">
+            <P>Somos una empresa 100% Escuintleca, con valores y origenes en CECADE.</P>
+            <h2 class="sect1-main-left-h2">B-PRODUCTS</h2>
+            
+        </div>
+        <div class="sect1-main-right">
+            <img src="assets/sect1-main-right-img.png" alt="" class="sect1-main-right-img">
+        </div>
+    </section>
+
+    <section class="sect2-main">
+        <div class="sect2-main-1">
+            <div class="sect2-main-1-1">
+                <h2>Nuestra Misión</h2>
+                <p>En B-PRODUCTS, desarrollado por CECADE, nos comprometemos a ofrecer una amplia variedad de productos de calidad a precios accesibles para la comunidad de Escuintla. Buscamos ser un punto de referencia en conveniencia y servicio, brindando a nuestros clientes una experiencia de compra confiable, eficiente y amigable. Como parte de CECADE, promovemos el desarrollo local a través de un comercio responsable y orientado al bienestar de nuestros clientes y colaboradores.</p>
+            </div>
+            <div class="sect2-main-1-2">
+                <img src="assets/sect2-main-1-2.png" alt="" class="sect2-main-1-2-img">
+            </div>
+        </div>
+
+        <div class="sect2-main-2">
+            <div class="sect2-main-2-1">
+                <h2>Nuestra Visión</h2>
+                <p>Ser la tienda de referencia en Escuintla para productos variados, destacándonos por nuestra calidad, precios accesibles y excelente servicio al cliente. En B-PRODUCTS aspiramos a crecer de manera sostenible, expandiendo nuestra oferta y alcance, mientras fortalecemos nuestra relación con la comunidad. Como parte de CECADE, buscamos generar un impacto positivo en el desarrollo económico local, promoviendo el emprendimiento y la innovación en el comercio.</p>
+            </div>
+            <div class="sect2-main-2-2">
+                <img src="assets/sect2-main-2-2.png" alt="" class="sect2-main-1-2-img">
+            </div>
+        </div>
+        <a href="/Sobre.html" class="acercade-sect2-main"><p class="sect2-main-about-1">ACERCA DE</p><p class="sect2-main-about-2">, B-PRODUCTS</p></a>
+    </section>
+
+    <section class="sect3-main">
+        <h2>Lo Más Vendido</h2>
+        <div class="carousel-container">
+            <button class="nav-button prev" onclick="scrollCarousel(-200)">&#10094;</button>
+            <div class="sect3-main-products" id="carousel">
+                <div class="box-boxes"><div class="boxes">1</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">2</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">3</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">4</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">5</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">6</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">7</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">8</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">9</div><p>Nombre Elemento</p></div>
+                <div class="box-boxes"><div class="boxes">10</div><p>Nombre Elemento</p></div>
+                
+                
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(200)">&#10095;</button>
+        </div>
+
+    </section>
 </main>
     <!-- Footer -->
      <footer class="footer">
@@ -66,6 +113,26 @@
             </div>
         </div>
 </footer>
-
+<script>
+    const carousel = document.getElementById("carousel");
+        
+        function scrollCarousel(amount) {
+            carousel.scrollBy({
+                left: amount,
+                behavior: "smooth"
+            });
+        }
+        
+        function autoScroll() {
+            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+                carousel.scrollLeft = 0;
+            } else {
+                scrollCarousel(200);
+            }
+        }
+        
+        setInterval(autoScroll, 4000); // Desplaza cada 4 segundos
+        
+</script>
 </body>
 </html>
