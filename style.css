@@ -438,6 +438,29 @@ main {
 }
 .prev { left: 0; }
 .next { right: 0; }
+@media only screen and (max-width: 767px) {
+   .sect2-main-1 { 
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+   }
+   @media only screen and (max-width: 767px) {
+    .sect2-main-2 { 
+     display: flex;
+     flex-direction: column-reverse;
+     width: 100%;
+     align-items: center;
+    }
+    @media only screen and (max-width: 767px) {
+        .sect1-main { 
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100%;
+         align-items: center;
+        }
+ }
+}
 
 /* Sobre Nosotros */
 .manadevida-about {
