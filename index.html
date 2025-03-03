@@ -14,14 +14,31 @@
         <img src="assets/Icon.png" class="icon">
         <img src="assets/LogoText.png" class="logotext">
     </div>
+    <!-- Menu despl -->
+    <div class="menu-desp">
+        <!-- Botón de las tres barras (hamburguesa) -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menú desplegable -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">X</button>
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="index.html">PRODUCTOS</a></li>
+        <li><a href="index.html">SOBRE NOSOTROS</a></li>
+        <li><a href="index.html">CONTACTO</a></li>
+    </ul>
+</div>
+    </div>
     <div class="header-menu">
         <ul class="ul-header">
             <li class="links-up"><a href="index.html">INICIO</a></li>
-            <li class="links-up"><a href="products.html">PRODUCTOS</a></li>
+            <li class="links-up"><a href="#">PRODUCTOS</a></li>
             <li class="links-up"><a href="Sobre.html">SOBRE NOSOTROS</a></li>
             <li class="links-up"><a href="contact.html">CONTACTANOS</a></li>
         </ul>
     </div>
+    
 
 </header>
     <!-- Main -->
@@ -113,27 +130,6 @@
             </div>
         </div>
 </footer>
-<script>
-    const carousel = document.getElementById("carousel");
-        
-        function scrollCarousel(amount) {
-            carousel.scrollBy({
-                left: amount,
-                behavior: "smooth"
-            });
-        }
-        
-        
-        function autoScroll() {
-            if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
-                carousel.scrollLeft = 0;
-            } else {
-                scrollCarousel(200);
-            }
-        }
-        
-        setInterval(autoScroll, 4000); // Desplaza cada 4 segundos
-        
-</script>
+<script src="script.js"></script>
 </body>
 </html>
