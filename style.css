@@ -1,13 +1,13 @@
 /* Roots */
 :root {
-    ---black-grey: #292927;
-    ---grey-text-secundary: #c9c9c9;
+    ---black-grey: #31312e;
+    ---grey-text-secundary: #b6b6b6;
     ---black-grey-secundary: #4e4e4c;
     ---grey-third: #e7e7e7;
-    ---gold-primary: #fab513;
-    ---gold-slow: #ffc43d;
-    ---gold-secundary: #ffe097;
-    ---gold-third: #dad7d0;
+    ---gold-primary: #ffbe26;
+    ---gold-slow: #ffcc56;
+    ---gold-secundary: #f1cb71;
+    ---gold-third: #ffe8b6;
     ---aqua-blue-dark: #1b9aaa;
     ---red-pink: #ef476f;
 
@@ -500,7 +500,7 @@ main {
     max-width: 850px;
     margin: 30px auto;
     padding: 40px;
-    background-color: rgb(233, 231, 231);
+    background-color: rgb(235, 241, 245);
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(32, 32, 32, 0.1);
 }
