@@ -790,3 +790,23 @@ h2 {
     color: red;
     font-size: 25px;
 }
+
+
+/* Carrito */
+* {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+max-width: 1200px;
+padding: 10px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+contain: paint;
+}
+.contenedor .contenedor-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
