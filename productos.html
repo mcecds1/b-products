@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | B-PRODUCTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Header -->
+<header class="header">
+    <div class="header-logo">
+        <img src="assets/Icon.png" class="icon">
+        <img src="assets/LogoText.png" class="logotext">
+    </div>
+     <!-- Menu despl -->
+     <div class="menu-desp">
+        <!-- Botón de las tres barras (hamburguesa) -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menú desplegable -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">X</button>
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="activeitem.html">TIENDA ONLINE</a></li>
+        <li><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+        <li><a href="contact.html">CONTACTO</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="header-menu">
+        <ul class="ul-header">
+            <li class="links-up"><a href="index.html">INICIO</a></li>
+            <li class="links-up"><a href="productos.html">PRODUCTOS</a></li>
+            <li class="links-up"><a href="activeitem.html">TIENDA ONLINE</a></li>
+            <li class="links-up"><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+            <li class="links-up"><a href="contact.html">CONTACTANOS</a></li>
+        </ul>
+    </div>
+
+</header>
+<!-- Main -->
+<main>
+    <h2>Productos Más Vendidos</h2>
+    <section class="productos-viral-products">
+        <div class="carousel-container">
+            <button class="nav-button prev" onclick="scrollCarousel(-200)">&#10094;</button>
+            <div class="sect3-main-products" id="carousel">
+                <a href="activeitem.html"><div class="box-boxes"><div class="boxes"><img src="assets/products/general/1.png" alt=""></div><p>Coca Cola - 354ml</p></div></a>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-2.png" alt=""></div><p>Lay's Barbacoa</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-3.png" alt=""></div><p>Lay's Clásica</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-4.png" alt=""></div><p>Lay's Chile Limón</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-5.png" alt=""></div><p>Lay's Chile</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-6.png" alt=""></div><p>Coca Cola - 2lt</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-7.png" alt=""></div><p>Dalmata</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-8.png" alt=""></div><p>Tortrix Limón</p></div> 
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(200)">&#10095;</button>
+        </div>
+    </section>
+    <section class="visita-online"><h2>Visita Nuestra Tienda Online</h2>
+    <div class="button-tienda">Tienda Online</div></section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+
+        <div class="footer1">
+            <img src="assets/Icon.png" class="logotext" id="icon-footer">
+           <img src="assets/cecade-white.png" class="icon" id="cecade-footer">
+        </div>
+
+        <div class="footer2">
+            <div>
+                <h3>Menú</h3>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobre.html">Sobre Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </div>
+            <div>
+                <h3>Páginas</h3>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="https://www.cecade.org/apoya-cecade">Apoya a CECADE</a></li>
+                <li><a href="https://www.cecade.org/privacy-policy">Privacy Policy</a></li>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <li><a href="https://www.instagram.com/_productsb__/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/b.products.cecade/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@b_products__">Tik Tok</a></li>
+            </div>
+            
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

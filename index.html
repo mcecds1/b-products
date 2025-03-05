@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-PRODUCTS</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <!-- Header -->
+<header class="header">
+    <div class="header-logo">
+        <img src="assets/Icon.png" class="icon">
+        <img src="assets/LogoText.png" class="logotext">
+    </div>
+    <!-- Menu despl -->
+    <div class="menu-desp">
+        <!-- Botón de las tres barras (hamburguesa) -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menú desplegable -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">X</button>
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="activeitem.html">TIENDA ONLINE</a></li>
+        <li><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+        <li><a href="contact.html">CONTACTO</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="header-menu">
+        <ul class="ul-header">
+                <li class="links-up"><a href="index.html">INICIO</a></li>
+                <li class="links-up"><a href="productos.html">PRODUCTOS</a></li>
+                <li class="links-up"><a href="activeitem.html">TIENDA ONLINE</a></li>
+                <li class="links-up"><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+                <li class="links-up"><a href="contact.html">CONTACTANOS</a></li>
+        </ul>
+    </div>
+    
+
+</header>
+    <!-- Main -->
+<main>
+    <section class="sect1-main">
+        <div class="sect1-main-left">
+            <img src="assets/cecade-white.png" alt="" class="sect1-main-left-cecade">
+            <P>Somos una empresa 100% Escuintleca, con valores y origenes en CECADE.</P>
+            <h2 class="sect1-main-left-h2">B-PRODUCTS</h2>
+            
+        </div>
+        <div class="sect1-main-right">
+            <img src="assets/sect1-main-right-img.png" alt="" class="sect1-main-right-img">
+        </div>
+    </section>
+
+    <section class="sect2-main">
+        <div class="sect2-main-1">
+            <div class="sect2-main-1-1">
+                <h2>Nuestra Misión</h2>
+                <p>En B-PRODUCTS, desarrollado por CECADE, nos comprometemos a ofrecer una amplia variedad de productos de calidad a precios accesibles para la comunidad de Escuintla. Buscamos ser un punto de referencia en conveniencia y servicio, brindando a nuestros clientes una experiencia de compra confiable, eficiente y amigable. Como parte de CECADE, promovemos el desarrollo local a través de un comercio responsable y orientado al bienestar de nuestros clientes y colaboradores.</p>
+            </div>
+            <div class="sect2-main-1-2">
+                <img src="assets/sect2-main-1-2.png" alt="" class="sect2-main-1-2-img">
+            </div>
+        </div>
+
+        <div class="sect2-main-2">
+            <div class="sect2-main-2-1">
+                <h2>Nuestra Visión</h2>
+                <p>Ser la tienda de referencia en Escuintla para productos variados, destacándonos por nuestra calidad, precios accesibles y excelente servicio al cliente. En B-PRODUCTS aspiramos a crecer de manera sostenible, expandiendo nuestra oferta y alcance, mientras fortalecemos nuestra relación con la comunidad. Como parte de CECADE, buscamos generar un impacto positivo en el desarrollo económico local, promoviendo el emprendimiento y la innovación en el comercio.</p>
+            </div>
+            <div class="sect2-main-2-2">
+                <img src="assets/sect2-main-2-2.png" alt="" class="sect2-main-1-2-img">
+            </div>
+        </div>
+        <a href="/Sobre.html" class="acercade-sect2-main"><p class="sect2-main-about-1">ACERCA DE</p><p class="sect2-main-about-2">, B-PRODUCTS</p></a>
+    </section>
+
+    <section class="sect3-main">
+        <h2>Lo Más Vendido</h2>
+        <div class="carousel-container">
+            <button class="nav-button prev" onclick="scrollCarousel(-200)">&#10094;</button>
+            <div class="sect3-main-products" id="carousel">
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-2.png" alt=""></div><p>Lay's Barbacoa</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-3.png" alt=""></div><p>Lay's Clásica</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-4.png" alt=""></div><p>Lay's Chile Limón</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-5.png" alt=""></div><p>Lay's Chile</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-6.png" alt=""></div><p>Coca Cola - 2lt</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-7.png" alt=""></div><p>Dalmata</p></div>
+                <div class="box-boxes"><div class="boxes"><img src="assets/products/masvendidos/most-8.png" alt=""></div><p>Tortrix Limón</p></div> 
+                
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(200)">&#10095;</button>
+        </div>
+
+    </section>
+</main>
+    <!-- Footer -->
+     <footer class="footer">
+
+        <div class="footer1">
+            <img src="assets/Icon.png" class="logotext" id="icon-footer">
+           <img src="assets/cecade-white.png" class="icon" id="cecade-footer">
+        </div>
+
+        <div class="footer2">
+            <div>
+                <h3>Menú</h3>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobre.html">Sobre Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </div>
+            <div>
+                <h3>Páginas</h3>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="https://www.cecade.org/apoya-cecade">Apoya a CECADE</a></li>
+                <li><a href="https://www.cecade.org/privacy-policy">Privacy Policy</a></li>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <li><a href="https://www.instagram.com/_productsb__/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/b.products.cecade/">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@b_products__">Tik Tok</a></li>
+            </div>
+            
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
