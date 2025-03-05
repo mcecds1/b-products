@@ -72,7 +72,7 @@ body {
     width: 35%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .header-menu {
     width: 65%;
@@ -83,10 +83,16 @@ a {
     color: rgb(0, 0, 0);
 }
 .icon {
-    height: 70px;
+    height: 80%;
 }
 .logotext {
-    height: 110px;
+    height: 20%;
+    width: auto;
+}
+@media only screen and (max-width: 767px) {
+    .logotext {
+        max-height: 15%;
+    }
 }
 
 /* Header menu */
@@ -144,9 +150,8 @@ a {
 /* Estilos del botón de las tres barras (hamburguesa) */
 .hamburger {
     position: absolute;
-
     cursor: pointer;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 1000;
 }
 .menu-desp {
@@ -188,6 +193,110 @@ a {
     flex-direction: reverse;
 }
 }
+
+/* Header busqueda */
+.busqueda-header {
+    width: 100%;
+    background-color: var(---black-grey-secundary);
+    box-shadow: 0 0 15px var(---black-grey-secundary);
+    max-height: 100px;
+    display: flex;
+}
+.busqueda-header-logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-busqueda {
+    background-color: var(---black-grey);
+}
+.menu-desp-busqueda {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.div-logos-menu-desp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+.div-logos-menu-desp img {
+    filter: drop-shadow( 0 0 10px var(---grey-third));
+}
+
+
+#hamburger-busqueda {
+    color: white;
+}
+.menu-desp-icon-busqueda {
+    height: 150px;
+    width: auto;
+}
+.menu-desp-icon-busqueda-text {
+    height: 60px;
+    width: auto;
+}
+.icon-busqueda {
+    height: 80%;
+}
+.busqueda-general {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.busqueda {
+    width: 80%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: left;
+}
+.busqueda input {
+    width: 60%;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: 600;
+    transition: 200ms;
+}
+.busqueda input:focus {
+    width: 95%;
+    border: none;
+    outline: none;
+    padding: 17px 15px;
+}
+.busqueda-lupa {
+    margin: 0 5px 0 35px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-busqueda-lupa {
+    height: 35px;
+}
+.busqueda-header-actions {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.action-busqueda {
+    height: 50px;
+}
+.action-busqueda-header {
+    display: flex;
+    align-items: center;
+}
+.action-busqueda-header h4 {
+    color: white;
+    font-weight: 400;
+}
+
 /* Footer */
 .footer {
     background-color: var(---black-grey);
@@ -199,9 +308,6 @@ a {
     border-radius: 25px 25px 0 0;
     margin: 0;
     width: 100%;
-    
-    
-    
 }
 a {
     color: white;
@@ -219,14 +325,31 @@ h3 {
 .footer1 {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 30px 0;
+}
+
+#icon-footer {
+    height: 180px;
+    width: auto;
+}
+#cecade-footer {
+    height: 80px;
+    width: auto;
 }
 .footer2 {
     width: 60%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+}
+@media only screen and (max-width: 767px) {
+    .footer2, .footer {
+        flex-direction: column;
+    }
+    .footer1 {
+        flex-direction: column;
+    }
 }
 li:hover {
     scale: 1.09;
@@ -387,11 +510,11 @@ main {
     font-size: 35px;
 }
 .boxes {
-    min-height: 170px;
-    min-width: 170px;
+    min-height: 230px;
+    min-width: 230px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 70px;
+    padding: 20px;
     margin: 10px 20px;
     transition: 150ms;
 }
@@ -438,6 +561,27 @@ main {
 }
 .prev { left: 0; }
 .next { right: 0; }
+@media only screen and (max-width: 767px) {
+   .sect2-main-1 { 
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+   }
+   .sect2-main-2 { 
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+   }
+   .sect1-main { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+   }
+   
+   }
 
 /* Sobre Nosotros */
 .manadevida-about {
@@ -555,3 +699,94 @@ textarea {
     margin-bottom: 20px;
 }
 
+/* Productos */
+.productos-viral-products {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.boxes {
+    height: 150px;
+    width: 150px;
+}
+.boxes img {
+    height: 95%;
+    width: auto;
+}
+.visita-online {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+}
+.button-tienda {
+    text-align: center;
+    width: 160px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    transition: 450ms;
+    justify-content: center;
+    padding: 20px 60px;
+    margin-top: 20px;
+}
+.button-tienda:hover {
+    width: 250px;
+    box-shadow: 0 0 15px var(---gold-slow);
+    background-color: var(---gold-slow);
+}
+
+/* Producto activo */
+
+.sect1-buy {
+    display: flex;
+    background-color: var(---grey-third);
+    border-radius: 20px;
+    margin: 0 5px;
+    padding: 80px 40px;
+}
+.sect1-buy-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.sect1-buy-left img {
+    height: 95%;
+}
+.sect1-buy-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-buy-shop {
+    width: fit-content;
+    padding: 20px 60px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 200ms;
+    margin: 40px;
+}
+.button-buy-shop a {
+    color: var(---black-grey);
+    font-weight: 500;
+}
+.button-buy-shop:hover {
+    padding: 20px 80px;
+    background-color: var(---gold-slow);
+    box-shadow: 0 0 15px white;
+    border-radius: 30px;
+    a {
+        color: white;
+        font-weight: 700;
+    }
+}
+.price-buy-shop {
+    color: red;
+    font-size: 25px;
+}
