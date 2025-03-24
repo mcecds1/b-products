@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+<header class="header">
+    <div class="header-logo">
+        <img src="assets/Icon.png" class="icon">
+        <img src="assets/LogoText.png" class="logotext">
+    </div>
+    <!-- Menu despl -->
+    <div class="menu-desp">
+        <!-- Botón de las tres barras (hamburguesa) -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menú desplegable -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">X</button>
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="activeitem.html">TIENDA ONLINE</a></li>
+        <li><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+        <li><a href="contact.html">CONTACTO</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="header-menu">
+        <ul class="ul-header">
+                <li class="links-up"><a href="index.html">INICIO</a></li>
+                <li class="links-up"><a href="productos.html">PRODUCTOS</a></li>
+                <li class="links-up"><a href="activeitem.html">TIENDA ONLINE</a></li>
+                <li class="links-up"><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+                <li class="links-up"><a href="contact.html">CONTACTANOS</a></li>
+        </ul>
+    </div>
+    
+
+</header>
+
+<main class="main" id="iniciar-sesion">
+    <form action="" class="sesion-form">
+        <h1>Inicia Sesión</h1>
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <button>Iniciar Sesión</button>
+        <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+    </form>
+</main>
+</body>
+</html>

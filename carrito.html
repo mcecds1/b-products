@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | B-PRODUCTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+<header class="header">
+    <div class="header-logo">
+        <img src="assets/Icon.png" class="icon">
+        <img src="assets/LogoText.png" class="logotext">
+    </div>
+    <!-- Menu despl -->
+    <div class="menu-desp">
+        <!-- Botón de las tres barras (hamburguesa) -->
+<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menú desplegable -->
+<div class="menu" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">X</button>
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="activeitem.html">TIENDA ONLINE</a></li>
+        <li><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+        <li><a href="contact.html">CONTACTO</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="header-menu">
+        <ul class="ul-header">
+                <li class="links-up"><a href="index.html">INICIO</a></li>
+                <li class="links-up"><a href="productos.html">PRODUCTOS</a></li>
+                <li class="links-up"><a href="activeitem.html">TIENDA ONLINE</a></li>
+                <li class="links-up"><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+                <li class="links-up"><a href="contact.html">CONTACTANOS</a></li>
+        </ul>
+    </div>
+    
+
+</header>
+
+<main id="carrito">
+    <h1>Carrito</h1>
+    <section class="products-carrito">
+        <div class="producto">
+            <img src="assets/products/general/1.png" alt="Producto 1">
+            <h2>Producto 1</h2>
+            <p>$100.00</p>
+            <button>Eliminar</button>
+        </div>
+
+        <div class="carrito-productos">
+            <div class="producto">
+                <img src="assets/products/general/1.png" alt="Producto 1">
+                <h2>Producto 1</h2>
+                <p>$100.00</p>
+                <button>Eliminar</button>
+            </div>
+
+            <div class="carrito-productos">
+                <div class="producto">
+                    <img src="assets/products/general/1.png" alt="Producto 1">
+                    <h2>Producto 1</h2>
+                    <p>$100.00</p>
+                    <button>Eliminar</button>
+                </div>
+        </section>
+</main>
+</body>
+</html>

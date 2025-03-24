@@ -790,3 +790,59 @@ h2 {
     color: red;
     font-size: 25px;
 }
+/* iniciar sesion */
+#iniciar-sesion {
+    display: flex;
+    justify-content: center;}
+.sesion-form {
+    width: 550px;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sesion-form input:focus {
+    box-shadow: 0 0 20px var(---gold-secundary);
+    outline: none;
+}
+.sesion-form input {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 0;
+    transition: 150ms;
+    border-bottom: 1px solid var(---grey-third);
+    font-size: 17px;
+}
+.sesion-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(---gold-slow);
+    transition: 250ms;
+    margin: 15PX;
+}
+.sesion-form a {
+    color: var(---black-grey);
+}
+.sesion-form button:hover {
+    background-color: var(---gold-primary);
+    box-shadow: 0 0 25px var(---gold-slow);
+}
+
+
+/* Carrito */
+#carrito {
+    text-align: center;
+}
+.products-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.producto {
+    margin-top: 25px;
+}
