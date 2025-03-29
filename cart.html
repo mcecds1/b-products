@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="busqueda-header">
+        <div class="busqueda-header-logo">
+            <!-- Menu despl -->
+            <div class="menu-desp-busqueda">
+                <!-- Botón de las tres barras (hamburguesa) -->
+                <div class="hamburger" id="hamburger-busqueda" onclick="toggleMenu()">&#9776;</div>
+
+                <!-- Menú desplegable -->
+                <div class="menu menu-busqueda" id="menu">
+                    <button class="close-btn" onclick="toggleMenu()">X</button>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="activeitem.html">TIENDA ONLINE</a></li>
+                        <li><a href="Sobre.html">SOBRE NOSOTROS</a></li>
+                        <li><a href="contact.html">CONTACTO</a></li>
+                    </ul>
+                    <div class="div-logos-menu-desp">
+                        <img src="assets/Icon.png" class="menu-desp-icon-busqueda">
+                        <img src="assets/LogoText.png" class="menu-desp-icon-busqueda-text">
+                    </div>
+                </div>
+            </div>
+            <img src="assets/Icon.png" class="icon-busqueda">
+        </div>
+
+        <div class="busqueda-general">
+            <div class="busqueda-lupa">
+                <img src="assets/search.png" class="search-busqueda-lupa">
+            </div>
+
+            <div class="busqueda">
+                <input type="text" placeholder="¿Qué estás buscando?">
+            </div>
+        </div>
+
+        <div class="busqueda-header-actions">
+            <div class="action-busqueda-header"><img src="assets/account.png" alt="" class="action-busqueda"><h4>Mi Cuenta</h4></div>
+            <div class="action-busqueda-header"><img src="assets/carrito.png" alt="" class="action-busqueda"><h4>Carrito</h4></div>
+            <div class="action-busqueda-header"><img src="assets/store.png" alt="" class="action-busqueda"><h4>Sucursales</h4></div>
+        </div>
+    </section>
+
+    <div class="container" id="cont-cart">
+        <div class="products">
+            <h1>Productos</h1>
+            
+            <div class="product">
+                <h2>Producto 1</h2>
+                <p>Precio: $10</p>
+                <button class="add-to-cart" data-name="Producto 1" data-price="10">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <h2>Producto 2</h2>
+                <p>Precio: $20</p>
+                <button class="add-to-cart" data-name="Producto 2" data-price="20">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <h2>Producto 3</h2>
+                <p>Precio: $30</p>
+                <button class="add-to-cart" data-name="Producto 3" data-price="30">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items">
+                <!-- Los productos se agregarán aquí -->
+            </ul>
+            <p>Total: $<span id="total">0</span></p>
+            
+            <!-- Formulario que aparece solo si hay productos en el carrito -->
+            <form class="form-cart" id="checkout-form" style="display:none;">
+                <input type="text" name="name" id="name" required placeholder="Nombre Completo">
+                <input type="email" name="mail" id="mail" required placeholder="Correo Electrónico">
+                <input type="number" name="cellphone" id="cellphone" required placeholder="Número de Teléfono">
+                <button type="submit" id="checkout-btn">Realizar compra</button>
+            </form>
+
+            <!-- Mensaje cuando no hay productos -->
+            <p id="empty-cart-message" style="display:none; color: red;">¡Tu carrito está vacío! No puedes realizar la compra.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
